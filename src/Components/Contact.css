@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-video {
+ position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: -2;
+  pointer-events: none;
+  filter: brightness(4);
+
+}
+
+
+   
+
+/* Title at top center */
+.title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+    position: relative;      /* Ensure not absolute/relative with negative top */
+    z-index: 3;
+  top: 0;                /* Reset any accidental top offset */
+  margin-top: 0; 
+}
+.title h1 {
+      position: static;
+  top: 0;
+  margin-top: 0;
+  
+  font-size: 4.5rem;
+  font-weight: bolder;
+  background: linear-gradient(90deg, #a506e4, #ff2a68, #00e6e6, #ffd000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  z-index: 4;
+  margin-bottom: 0.5rem;
+}
+.title p {
+  color: #fff;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+/* Flex row for form and details */
+.form-details-row {
+  display: flex;
+  flex: 1;
+  min-height: 400px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.form, .details {
+  flex: 1 1 0;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Form styling */
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: rgba(34,34,34,0.85);
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+ min-width: 30vw;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+  height: 100%;
+  min-height: 500px;
+  z-index: 2;
+}
+.form h1 {
+  color: #ffd000;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.form input {
+  width: 100%;
+  margin-bottom: 1.1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.09);
+  color: #fff;
+  outline: none;
+  transition: box-shadow 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(165,6,228,0.08);
+}
+.form textarea {
+  min-height: 100px;
+  max-height: 240px;
+  resize: vertical;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.09);
+  color: #fff;
+  outline: none;
+  transition: box-shadow 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(165,6,228,0.08);
+  margin-bottom: 1.1rem;
+}
+.form input:focus,
+.form textarea:focus {
+  border: 1.5px solid #a506e4;
+  box-shadow: 0 0 12px #a506e4aa;
+}
+#message {
+  min-height: 120px;
+  max-height: 340px;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.09);
+  color: #fff;
+  margin-bottom: 1.1rem;
+  outline: none;
+  transition: box-shadow 0.4s, border 0.3s;
+  box-shadow: 0 2px 8px rgba(165,6,228,0.08);
+}
+#message:focus{
+    border: 1.5px solid #a506e4;
+    box-shadow: 0 0 12px #a506e4;
+}
+.form button {
+  background: linear-gradient(90deg, #a506e4, #ff2a68);
+  color: #fff;
+  border: none;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px #a506e488;
+}
+.form button:hover {
+  background: linear-gradient(90deg, #ff2a68, #a506e4);
+  box-shadow: 0 4px 24px #ff2a68aa;
+}
+
+/* Details at right, vertically bottom */
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+ width: 40vw;
+  height: 100%;
+  z-index: 2;
+}
+.Contact-info {
+  width: 100%;
+  background: rgba(34,34,34,0.92);
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.14);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Contact-info h1 {
+  color: #00e6e6;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* Icon, h5, and p styling */
+.Contact-info h5 {
+  display: inline-block;
+  color: #ffd000;
+  font-size: 1.08rem;
+  margin: 0 0 0.1rem 0.5rem;
+  font-weight: 600;
+}
+.Contact-info p {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.05rem;
+  margin: 0 0 0.7rem 0.5rem;
+  font-weight: 400;
+}
+
+#mail, #phone, #location {
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+  filter: drop-shadow(0 0 2px #ffd000) drop-shadow(0 0 1px #fff);
+  text-shadow: 0 0 4px #ffd000, 0 0 2px #fff;
+  color: #ffd0007e;
+  vertical-align: middle;
+  transition: filter 0.2s, color 0.2s;
+}
+#mail:hover, #phone:hover, #location:hover {
+  filter: drop-shadow(0 0 6px #a506e4) drop-shadow(0 0 2px #ff2a68);
+  color: #a506e4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .form-details-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .form, .details {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+  .details {
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.input-location {
+   width: 100%;
+  background: rgba(34,34,34,0.92);
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.14);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.location-map {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #00e6e688;
+}
+
+.input-location input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.09);
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,230,230,0.08);
+  outline: none;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+.input-location input[type="text"]:focus {
+  border: 1.5px solid #00e6e6;
+  box-shadow: 0 0 12px #00e6e6aa;
+}
+
+.input-location .geo-btn {
+  background: linear-gradient(90deg, #00e6e6, #a506e4);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.2rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #00e6e688;
+}
+.input-location .geo-btn:hover {
+  background: linear-gradient(90deg, #a506e4, #00e6e6);
+  box-shadow: 0 4px 16px #a506e4aa;
+}

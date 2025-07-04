@@ -1,0 +1,45 @@
+.custom-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border: 2.5px solid #a506e4;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  background: rgba(255,255,255,0.08);
+  transition: border-color 0.2s;
+  mix-blend-mode: difference;
+  box-shadow: 0 0 12px #a506e4, 0 0 4px #ff2a68;
+}
+
+.cursor-note {
+  position: fixed;
+  font-size: 1.3rem;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.7;
+  animation: note-fade 0.4s forwards;
+  user-select: none;
+  filter: drop-shadow(0 0 6px currentColor);
+}
+.cursor-note-img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  border-radius: 50%;
+  pointer-events: none;
+  /* Optional: add a border or shadow for effect */
+}
+
+@keyframes note-fade {
+  0% {
+    opacity: 0.7;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.7) translateY(-24px) rotate(-20deg);
+  }
+}

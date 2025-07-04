@@ -1,0 +1,1006 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Knewave&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main-with-bg {
+  position: relative;
+  min-height: 80vh;
+  overflow: hidden;
+  z-index: 2;
+  min-height: 80vh;
+}
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  filter: brightness(2);
+}
+.main-content {
+  position: relative;
+  z-index: 2;
+  /* Add padding or styling as needed */
+  color: #fff;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  height: auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  gap: 18px;
+   background: rgba(34, 34, 34, 0.35); /* semi-transparent dark */
+  backdrop-filter: blur(6px);         /* glass effect */
+  -webkit-backdrop-filter: blur(6px); /* Safari support */
+  border-radius: 24px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.15);
+  margin: 32px auto;
+  width: 90%;
+}
+.center-logo-border{
+
+  width: 102px;height: 102px;
+  border-radius: 50%;
+  padding: 3px;
+border-top: red;
+background-color: transparent;
+border-bottom: pink;
+border-right: purple;
+border-left: rgba(34, 34, 34, 0.007); ;
+  background-size: 400% 400%;
+  display: flex;
+  align-items: center;justify-content: center;
+  animation: rotate-grd 10s linear infinite;
+  position: absolute;
+  top: 35px;
+  border-width: 3px;
+  border-style: solid;
+}
+@keyframes rotate-grd {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{transform: rotate(360deg);}
+  
+}
+.center-logo {
+  margin-bottom: 8px;
+  height: 95px;
+  width: 95px;
+}
+
+.hero-section h1 {
+  margin: -20px;
+  font-size: 3.7rem;
+  font-weight: 90px;
+  color: linear-gradient(90deg, #FFD000, #1db954, #2310ce, #e96c05, #a506e4, #e96c05, #FFD000);
+  letter-spacing: 1px;
+  font-family: "Knewave", system-ui;
+}
+.gradient-heading {
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox */
+  color: transparent;
+}
+.hero-section p {
+  margin: 18px 0 28px 0;
+  font-size: 1.3rem;
+  max-width: 800px;
+}
+
+.btn-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.btn-2 button {
+  min-width: 160px;
+  height: 48px;
+  padding: 0 32px;
+  border: none;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff9800, #ffd000);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s, filter 0.3s;
+}
+
+.btn-2 button:hover {
+  box-shadow: 0 0 16px 4px #ffd000, 0 0 8px 2px #ff9800;
+  filter: brightness(1.1);
+  cursor: pointer;
+  color: #2310ce;}
+
+  .cineai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: 80vh;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.35); /* glass effect */
+    backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    border-radius: 24px;
+    box-shadow: 0 4px 32px 0 rgba(0,0,0,0.15);
+    /* margin: 32px auto 0 auto; */
+    text-align: center;
+  }
+  
+  .cineai h1 {
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    font-size: 3.2rem;
+    color: #fff;
+    margin-bottom: 18px;
+  }
+  .cineai h1 span {
+    background: linear-gradient(90deg, #e60ea5 0%, #730aeb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    color: transparent;
+  }
+  
+  .cineai p {
+    color: #d8cd9d;
+    font-size: 1rem;
+    margin-bottom: 24px;
+    position: relative;
+    top: 0;
+    width: 50vw;
+  }
+  
+  .ai-music button {
+    padding: 14px 40px;
+    border: none;
+    border-radius: 18px;
+    position: relative;
+    top: -25%;
+    /* text-transform: uppercase; */
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #e60ea5 0%, #730aeb 100%);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s, transform 0.2s;
+  }
+  
+  .ai-music button:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 24px 6px #e60ea5, 0 0 12px 3px #730aeb;
+    filter: brightness(1.1);
+  }
+  .power-distribution-insight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    height: auto;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.35); /* glass effect */
+    backdrop-filter: blur(4px) saturate(180%);
+    -webkit-backdrop-filter: blur(4px) saturate(180%);
+    border-radius: 24px;
+    box-shadow: 0 4px 32px 0 rgba(0,0,0,0.15);
+    margin: 32px auto 0 auto;
+    text-align: center;
+  }
+  
+  .power-distribution-insight h1 {
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    font-size: 3.2rem;
+    color: #fff;
+    margin-bottom: 18px;
+  }
+  .power-distribution-insight h1 span {
+    background: linear-gradient(90deg, #22adc5 0%, #730aeb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    color: transparent;
+  }
+  
+  .power-distribution-insight p {
+    color: #cac4a6;
+    font-size: 1rem;
+    margin-bottom: 24px;
+    position: relative;
+    top: 0%;
+    width: 50vw;
+  }
+  
+  .ai-strategy button {
+    padding: 14px 40px;
+    border: none;
+    border-radius: 18px;
+    position: relative;
+    top: -25%;
+    /* text-transform: uppercase; */
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #22adc5 0%, #730aeb 100%);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s, transform 0.2s;
+  }
+  
+  .ai-strategy button:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 14px 6px #22adc5, 0 0 12px 3px #730aeb;
+    filter: brightness(1.1);
+  }
+
+.next-steps{
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: auto;
+  text-align: center;
+  position: relative;
+  z-index: 2; 
+    background: rgba(34, 34, 34, 0.35); /* semi-transparent dark */
+  backdrop-filter: blur(6px);         /* glass effect */
+  -webkit-backdrop-filter: blur(6px); /* Safari support */
+  border-radius: 24px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.15);
+  margin: 32px auto;
+  width: 100%;
+}
+
+.next-steps .cards,
+#love-cinecms .cards,
+#artist-presence .cards,
+#perfect-plan .cards {
+  margin-top: -32px; /* or your preferred value */
+}
+
+
+.next-steps h1 span {
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox */
+  color: transparent;
+}
+.next-steps h1{
+
+  color: #fff;
+  font-family: monospace;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.next-steps p{
+
+  font-family: cursive;
+  font-size: 1.5rem;
+color: #FFD000;
+}
+
+
+.cards {
+  /* background: #fff; */
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  margin: 1.7rem auto 0 auto;
+  gap: 0.5rem;
+}
+
+.HEAD{
+  position: relative;
+  top: -6.5rem;
+}
+.PARA{
+  position: relative;
+  top: -6rem;
+}
+
+
+.cards > div {
+  flex: 1;
+    position: relative;
+    z-index: 0;
+  top: 0;
+  height: 280px;
+  /* background: #181818;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15); */
+  transition: box-shadow 0.3s, transform 0.3s;
+   margin: 0 0.5rem;
+  /*display: flex;
+  align-items: center;
+  justify-content: center; */
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.cards > div:hover {
+  box-shadow: 8px 8px 32px 0 #dd2476, 0 8px 32px 0 #ff512f;
+  transform: translateY(-6px) scale(1.04);
+  position: relative;
+  /* z-index: 10; */
+}
+.card-fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.5s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+.card-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.account,
+.upload,
+.global {
+  background: rgba(34, 34, 34, 0.35); /* semi-transparent dark */
+  backdrop-filter: blur(6px);          /* glass blur effect */
+  -webkit-backdrop-filter: blur(6px);  /* Safari support */
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.12);
+  border: 1px solid rgba(255,255,255,0.08);
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;      
+  padding-top: 32px;            
+  padding-bottom: 32px;
+  
+}
+#account-card{
+  height: 200px;
+}
+#upload-card{
+  height: 200px;
+}
+#global-card{
+  height: 200px;
+}
+#account-card h1{
+  position: relative;
+  top: -1.5rem;
+  font-size: 30px;
+  color: #a506e4; /* Vibrant purple */
+  text-shadow: 0 2px 6px #a506e4, 0 0 8px #a506e4aa;
+  
+}
+#account-card p{
+  position: relative;
+  top: -1rem;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  bottom: -30%;
+}
+#upload-card h1{
+   position: relative;
+  top: -1.5rem;
+   font-size: 30px;
+   color: #ff2a68; /* Vibrant pink */
+  text-shadow: 0 2px 6px #ff2a68, 0 0 8px #ff2a68aa;
+}
+#upload-card p{
+  position: relative;
+  top: -1rem;
+    font-size: 20px;
+  color: white;
+  position: relative;
+  bottom: -50%;
+}
+#global-card h1{
+   position: relative;
+  top: -1.5rem;
+  width: 100%;
+   font-size: 28px;
+  color: #00e6e6; /* Vibrant aqua/cyan */
+  text-shadow: 0 2px 6px #00e6e6, 0 0 8px #00e6e6aa;
+}
+#global-card p{
+  position: relative;
+  top: -1rem;
+     font-size: 20px;
+  color: white;
+  position: relative;
+  bottom: -50%;
+}
+#global-icon {
+  color: #007bff;
+  font-size: 2rem;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+#user {
+color: #a506e4; /* Vibrant purple */
+  text-shadow: 0 2px 6px #a506e4, 0 0 8px #a506e4aa;
+  transition: transform 0.3s, filter 0.3s;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+#cloud {
+  color: #ff2a68; 
+  text-shadow: 0 2px 6px #ff2a68, 0 0 8px #ff2a68aa;
+  transition: transform 0.3s, filter 0.3s;
+   font-size: 2.5rem;
+   margin-bottom: 25px;
+}
+
+#check {
+  color: #00e6e6; /* Vibrant aqua/cyan */
+  text-shadow: 0 2px 6px #00e6e6, 0 0 8px #00e6e6aa;
+  transition: transform 0.3s, filter 0.3s;
+   font-size: 2.5rem;
+   margin-bottom: 25px;
+}
+
+.card:hover #user,
+.card:hover #cloud,
+.card:hover #check {
+  transform: scale(1.18) rotate(12deg);
+  filter: brightness(1.2) drop-shadow(0 0 12px currentColor);
+}
+
+/* Style the icons inside their parent cards */
+#love-cinecms .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+#globe, #chart, #dollar, #bolt {
+  font-size: 2.7rem;
+  margin-bottom: 18px;
+  margin-top: 8px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  padding: 14px;
+  background: rgba(255,255,255,0.07);
+  box-shadow: 0 2px 18px 0 rgba(0,0,0,0.13);
+  transition: 
+    transform 0.25s cubic-bezier(.4,0,.2,1),
+    box-shadow 0.25s cubic-bezier(.4,0,.2,1),
+    /* border-color 0.25s, */
+    filter 0.25s;
+}
+
+/* Vibrant colors for each icon */
+#globe   { color: #00e6e6; border-color: #00e6e6; }
+#chart   { color: #ff9800; border-color: #ff9800; }
+#dollar  { color: #00c853; border-color: #00c853; }
+#bolt    { color: #e60ea5; border-color: #e60ea5; }
+
+/* Hover effect: scale up, stronger shadow, border color */
+#love-cinecms .card:hover #globe,
+#love-cinecms .card:hover #chart,
+#love-cinecms .card:hover #dollar,
+#love-cinecms .card:hover #bolt {
+  transform: scale(0.9);
+  box-shadow: 0 4px 8px 0 currentColor, 0 0 0 4px currentColor;
+  filter: brightness(1.2);
+  border-color: currentColor;
+}
+/* Distribution card: green shadow */
+
+#distribution h1,
+#analytics h1,
+#royalties h1,
+#release h1{
+  position: relative;
+  top: -1.5rem;
+}
+#distribution p,
+#analytics p,
+#royalties p,
+#release p{
+  position: relative;
+  top: -1.5rem;
+}
+#distribution:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 32px 8px #1db954cc, 0 0 16px 4px #1db95488;
+  z-index: 8;
+}
+
+/* Analytics card: blue shadow */
+#analytics:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 32px 8px #007bffcc, 0 0 16px 4px #007bff88;
+  z-index: 8;
+  cursor: pointer;
+}
+
+/* Royalties card: gold/yellow shadow */
+#royalties:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 32px 8px #FFD700cc, 0 0 16px 4px #FFD70088;
+  z-index: 4;
+}
+
+/* Release card: orange shadow */
+#release:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 32px 8px #ff9800cc, 0 0 16px 4px #ff980088;
+  z-index: 8;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;  
+  background: rgba(34, 34, 34, 0.35); /* semi-transparent dark */
+  backdrop-filter: blur(2px) saturate(180%);
+  -webkit-backdrop-filter: blur(2px) saturate(180%);
+  border-radius: 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.15);
+  /* Keep existing transitions if any */
+  transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+}
+.card h1{
+  font-size: 30px;
+  color: yellow;
+  position: relative;
+  bottom: -50%;
+}
+.card p{
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  position: relative;
+  bottom: -50%;
+}
+
+#Spotify,
+#AppleMusic,
+#OAC {
+ height: 380px;
+}
+#Spotify h1{
+  position: relative;
+  top: -3.5rem;
+  color: green;
+  margin-top: 45px;
+  font-size: 1.5rem;
+  margin-bottom: 80px;
+
+}
+
+/* Center icons above headings in their parent card */
+#artist-presence .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+#spotify-icon,
+#headphone,
+#youtube {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  padding: 12px;
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 2px 14px 0 rgba(0,0,0,0.13);
+  transition:
+    transform 0.25s cubic-bezier(.4,0,.2,1),
+    box-shadow 0.25s cubic-bezier(.4,0,.2,1),
+    border-color 0.25s,
+    filter 0.25s;
+}
+
+/* Vibrant colors for each icon */
+#spotify-icon { color: #1db954; border-color: #1db954; }
+#headphone   { color: #ff2a68; border-color: #ff2a68; }
+#youtube     { color: #ff0000; border-color: #ff0000; }
+
+/* Hover effect: scale up, stronger shadow, border color */
+#artist-presence .card:hover #spotify-icon,
+#artist-presence .card:hover #headphone,
+#artist-presence .card:hover #youtube {
+  transform: scale(1.15);
+  box-shadow: 0 4px 28px 0 currentColor, 0 0 0 4px currentColor;
+  filter: brightness(1.15);
+  border-color: currentColor;
+}
+
+#Spotify,
+#AppleMusic,
+#OAC{
+    min-height: 380px; /* or any height you prefer */
+  background: rgba(34, 34, 34, 0.35); /* glass effect */
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  border-radius: 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.15);
+}
+#Spotify p{
+    position: relative;
+  top: -3.5rem;
+  margin-bottom: -18px;
+  color :white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  width: 100vw;
+}
+#AppleMusic h1{
+    position: relative;
+  top: -3.5rem;
+  margin-top:45px;
+  color: pink;
+  font-size: 1.5rem;
+  margin-bottom: 80px;
+}
+#AppleMusic p{
+    position: relative;
+  top: -3.5rem;
+  margin-bottom: -12px;
+  color :white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+}
+#OAC h1{
+    position: relative;
+  top: -3.5rem;
+  margin-top: 55px;
+  color: orange;
+  font-size: 1.4rem;
+  margin-bottom: 50px;
+}
+#OAC p{
+    position: relative;
+  top: -3.5rem;
+  color :white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+}
+#perfect-plan h1{
+  width: 50vw;
+}
+#perfect-plan p{
+  width: 50vw;
+  font-size: 1.1rem;
+}
+#artist-presence h1{
+  width: 70vw;
+}
+#artist-presence p{
+  width: 50vw;
+  font-size: 1.1rem;
+}
+.Free.card,
+.Popular.card,
+.Label.card {
+  align-items: flex-start !important;
+  text-align: left !important;
+  overflow : hidden;
+  min-height: 380px; /* or any height you prefer */
+  background: rgba(34, 34, 34, 0.35); /* glass effect */
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  border-radius: 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.15);
+}
+/* Move cards closer to heading/para and away from the next section */
+.perfect-plan .cards {
+  margin-top: 12px;      /* Space above cards (adjust as needed) */
+  margin-bottom: 0;      /* Remove extra space below cards */
+  gap: 2rem;             /* Space between cards, if using flex */
+}
+
+/* Optionally, reduce bottom margin of the section itself */
+.next-steps.perfect-plan {
+  margin-bottom: 0;
+  padding-bottom: 32px;  /* Or adjust as needed */
+}
+
+.Free.card ul,
+.Popular.card ul,
+.Label.card ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0;
+  margin-top: 8px;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.08rem;
+}
+
+.Free.card ul li,
+.Popular.card ul li,
+.Label.card ul li {
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.Free.card ul li::before,
+.Popular.card ul li::before,
+.Label.card ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1db954; /* Spotify green tick, change as you like */
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1;
+}
+.Free.card h1,
+.Popular.card h1,
+.Label.card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.Free.card h1 span,
+.Popular.card h1 span,
+.Label.card h1 span {
+  display: inline-block;
+  font-size: 3.3rem;
+  font-weight: 600;
+  color: #FFD000;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+.Popular.card p{
+  margin-bottom: -70px;
+  position:absolute;
+  right:0%;
+}
+.Free.card button,
+.Popular.card button,
+.Label.card button {
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 0px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px; /* minimal border radius */
+  background: linear-gradient(90deg, #6e10d8 0%, #0dd6d6 100%);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: box-shadow 0.3s, transform 0.2s, background 0.3s;
+}
+
+.Free.card button:hover,
+.Popular.card button:hover,
+.Label.card button:hover {
+  background: linear-gradient(90deg, #6e10d8 0%, #0dd6d6 100%);
+  box-shadow: 0 0 24px 6px #6e10d8, 0 0 12px 3px #0dd6d6;
+  transform: scale(1.04);
+  filter: brightness(1.08);
+}
+
+
+  .Popular.card p {
+    
+    top: 0;
+    right: 0;
+    margin: 0;
+    font-size: 1.1rem; /* Or whatever size you prefer */
+    color: #FFD000;     /* Keep or tweak as needed */
+    font-family: cursive; /* Optional: use your desired typeface */
+  }
+#Spotify .profile,
+#AppleMusic .Applemusic,
+#OAC .Oac {
+  width: 40%;
+  padding: 14px 0;
+  margin-top: 16px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 16px;
+  /* background: linear-gradient(90deg, #232526 0%, #414345 100%); */
+  background-color: #fff;
+  cursor: pointer;
+  transition: 
+    transform 0.2s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.2s cubic-bezier(.4,2,.6,1),
+    border 0.2s;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18), 0 1.5px 0 0 #fff2;
+  border: 2.5px solid transparent;
+  outline: none;
+}
+#Spotify,
+#AppleMusic,
+#OAC {
+  width: 40% !important;   /* or try 35%, 30%, or a fixed value like 320px */
+  min-width: 260px;        /* optional: ensures they don't get too small */
+  max-width: 400px;        /* optional: prevents them from getting too large */
+}
+#Spotify .profile,
+#AppleMusic .Applemusic,
+#OAC .Oac {
+  width: 70%;      /* Increased from 40% */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#Spotify p,
+#AppleMusic p,
+#OAC p {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left; /* or center, as you prefer */
+}
+
+#Spotify .profile {
+  color: green;
+  border: 1px solid #1db954cc;
+  box-shadow: 0 0 16px 2px #1db95499, 0 2px 16px 0 #1db95433;
+}
+#Spotify .profile:hover {
+  color: #fff;
+  font-weight: bold;
+  transform: scale(1.07);
+  box-shadow: 0 0 32px 8px #1db954cc, 0 0 16px 4px #fff8;
+  border-color: #1db954;
+  background: linear-gradient(90deg, #1db954 0%, #1ed760 100%);
+}
+
+
+#AppleMusic .Applemusic {
+  color: rgb(212, 34, 64);
+  border: 1px solid #ff2a68aa;
+  box-shadow: 0 0 16px 2px #ff2a68aa, 0 2px 16px 0 #ff2a6833;
+}
+#AppleMusic .Applemusic:hover {
+  transform: scale(1.07);
+  color: #fff;
+  font-weight: bolder;
+  box-shadow: 0 0 32px 8px #ff2a68cc, 0 0 16px 4px #fff8;
+  border-color: #ff2a68;
+  background: linear-gradient(90deg, #ff2a68 0%, #ff5fa2 100%);
+}
+
+
+#OAC .Oac {
+  color: orange;
+  border: 1px solid #ff9800aa;
+  box-shadow: 0 0 16px 2px #ff9800aa, 0 2px 16px 0 #ff980033;
+  margin-bottom: 25px;
+}
+#OAC .Oac:hover {
+  color: #fff;
+  font-weight: bolder;
+  transform: scale(1.07);
+  box-shadow: 0 0 32px 8px #ff9800cc, 0 0 16px 4px #fff8;
+  border-color: #ff9800;
+  background: linear-gradient(90deg, #ff9800 0%, #ffd000 100%);
+}
+.Free h1 span{
+  color: aqua;
+}
+.with-cinecms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 60vh;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.35); /* glass effect */
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  border-radius: 24px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.15);
+  /* margin: 12px auto 0 auto; */
+  text-align: center;
+}
+
+.with-cinecms h1 {
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  font-size: 3.2rem;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+
+.with-cinecms p {
+  color: #ebe8dd;
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.launch-cinecms button {
+  padding: 14px 40px;
+  border: none;
+  border-radius: 18px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #8109e4 0%, #0bf0dd 100%);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.launch-cinecms button:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 14px 6px #8109e4, 0 0 12px 3px #0bf0dd;
+  filter: brightness(1.1);
+}
+.tag{
+  position: relative;
+  top: -1rem;
+}
+
+.pr{
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  font-size: 1rem;
+  color: #ffd000;
+  margin-left: 6px;
+  vertical-align: middle;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.art{
+  position: relative;
+  left: -18rem;
+}
